@@ -13,18 +13,23 @@
         background-size: contain;
         background-color: black;
       }
-      video{
-        position: absolute;
-        left: 100px;
-        top: 150px;
+      .flex-container
+      {
+        display: flex;
+        justify-context: center;
+        align-items: center;
+        height: 100vh;
       }
-    </style>
+   </style>
     
   </head>
   <body>
-    <video autoplay>
-      <source src="picklepepsi.mp4" type="video/mp4">
-    </video>
+    <div class="flex-container">
+      <video width="600" controls>
+        <source src="picklepepsi.mp4" type="video/mp4">
+      </video>
+    </div>
+          
   </body>
 </html>
   
