@@ -13,6 +13,18 @@
          background-attachment: fixed;
          background-position: center center;
        }
+         .button{
+        border:none;
+        color: white;
+        padding: 12px 28px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
         .button1{
         background-color: black;
         color: white;
@@ -23,13 +35,27 @@
         background-color: white;
         color: black;
       }
-      .container{
+      .flex-container{
         display: flex;
         justify-content: end;
-        align-items: end;
-        height: 46vh;
-        width: 67vw;
+        align-items: center;
+        height: 58vh;
+        width: 100vw;
+        gap: 50px;
       }   
      </style>
    </head>
+   <body>
+      <div class="flex-container">
+         <div class="flex-item">
+            <button class="button button1" onclick="document.location='couch.html'">snack</button>
+         </div>
+         <div class="flex-item2">
+            <button class="button button1" onclick="document.location='drinks.html'">drink</button>
+         </div>
+         <div class="flex-item3">
+            <button class="button button1" onclick="document.location='parkinglot.html'">cigs</button>
+         </div>
+      </div>
+   </body>
 </html>
